@@ -8,7 +8,7 @@ rvm:
   - 2.0.0
   - 2.1
   - jruby
-  - rbx
+  - rbx-2
 
 gemfile:
   - gemfiles/active_record_30.gemfile
@@ -38,6 +38,10 @@ matrix:
     - rvm: 1.8.7
       gemfile: gemfiles/mongoid_31.gemfile
   allow_failures:
+    - rvm: rbx-2
+      gemfile: gemfiles/mongo_mapper.gemfile
+    - rvm: rbx-2
+      gemfile: gemfiles/mongoid_24.gemfile
     - rvm: jruby
       gemfile: gemfiles/active_record_edge.gemfile
   fast_finish: true
