@@ -44,6 +44,4 @@ matrix:
       gemfile: gemfiles/mongo_mapper.gemfile
     - rvm: rbx-2
       gemfile: gemfiles/mongoid_24.gemfile
-    - rvm: jruby
-      gemfile: gemfiles/active_record_edge.gemfile
   fast_finish: true
